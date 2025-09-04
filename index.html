@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <header>
+    <h1>Student Registration System</h1>
+    <p>Register students, view records, and manage details efficiently.</p>
+  </header>
+
+  
+  <nav>
+    <ul>
+      <li><a href="#form-section">Register</a></li>
+      <li><a href="#records-section">View Records</a></li>
+      <li><button id="toggleMode">🌙 Dark Mode</button></li>
+    </ul>
+  </nav>
+
+  
+  <section id="form-section" class="form-section">
+    <h2>Register Student</h2>
+    <form id="studentForm">
+      <div class="form-grid">
+        <input type="text" id="studentName" placeholder="Student Name" required />
+        <input type="number" id="studentId" placeholder="Student ID" required />
+        <input type="email" id="emailId" placeholder="Email ID" required />
+        <input type="tel" id="contactNo" placeholder="Contact Number" required />
+      </div>
+      <button type="submit">Add Student</button>
+    </form>
+  </section>
+
+  
+  <section id="records-section" class="records-section">
+    <h2>Registered Students</h2>
+    <div class="records-container">
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Student ID</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <p>© 2025 Student Registration System | Built with HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
